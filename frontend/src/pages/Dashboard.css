@@ -1,0 +1,29 @@
+.page-wrap { min-height: 100vh; display: flex; flex-direction: column; }
+.main-content { max-width: 900px; margin: 0 auto; padding: 60px 24px 80px; width: 100%; flex: 1; }
+.page-header { margin-bottom: 40px; animation: fadeUp 0.5s ease both; }
+.page-title { font-size: clamp(1.8rem,5vw,2.6rem); font-weight: 800; line-height: 1.1; margin-bottom: 10px; color: var(--text); }
+.page-sub { color: var(--text-muted); font-size: 0.95rem; }
+.stats-row { display: flex; gap: 16px; margin-bottom: 40px; flex-wrap: wrap; animation: fadeUp 0.5s 0.05s ease both; }
+.stat-chip { background: var(--surface); border: 1px solid var(--border); border-radius: 50px; padding: 8px 18px; display: flex; align-items: center; gap: 8px; font-size: 0.88rem; }
+.stat-chip .dot { width: 8px; height: 8px; border-radius: 50%; }
+.dot-green  { background: var(--accent); }
+.dot-blue   { background: var(--accent-2); }
+.dot-red    { background: var(--accent-3); }
+.dot-yellow { background: var(--accent-4); }
+.stat-chip span:last-child { color: var(--text-muted); font-size: 0.82rem; }
+
+.loading-state {
+  text-align: center;
+  padding: 60px;
+  color: var(--text-muted);
+  font-family: 'Syne', sans-serif;
+  font-size: 1rem;
+  animation: fadeUp 0.4s ease both;
+}
+
+.loading-state {
+  text-align: center;
+  padding: 60px;
+  color: var(--text-muted, #888);
+  font-size: 1rem;
+}

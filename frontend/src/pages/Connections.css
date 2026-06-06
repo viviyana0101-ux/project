@@ -1,0 +1,61 @@
+.conn-tabs {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 28px;
+  flex-wrap: wrap;
+}
+.conn-tab {
+  font-family: 'Syne', sans-serif;
+  font-size: 0.82rem;
+  font-weight: 700;
+  padding: 8px 20px;
+  border-radius: 50px;
+  border: 1px solid var(--border);
+  background: transparent;
+  color: var(--text-muted);
+  cursor: pointer;
+  transition: all var(--transition);
+}
+.conn-tab.active {
+  background: rgba(79,255,176,0.1);
+  border-color: var(--accent);
+  color: var(--accent);
+}
+.conn-tab:hover:not(.active) { border-color: var(--text-muted); color: var(--text); }
+
+.conn-list { display: flex; flex-direction: column; gap: 16px; }
+
+.conn-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 20px 24px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  transition: border-color var(--transition), box-shadow var(--transition);
+  animation: fadeUp 0.3s ease both;
+}
+.conn-card:hover { border-color: rgba(79,255,176,0.2); box-shadow: var(--shadow); }
+
+.conn-avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 2px solid var(--border);
+  flex-shrink: 0;
+  background: var(--surface-2);
+}
+
+.conn-info { flex: 1; min-width: 0; }
+.conn-info h3 { font-family: 'Syne', sans-serif; font-size: 1rem; font-weight: 700; }
+.conn-role { font-size: 0.8rem; color: var(--accent-2); font-weight: 600; }
+.conn-skills { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
+
+.conn-actions { display: flex; gap: 10px; align-items: center; flex-shrink: 0; }
+
+.pending-label {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  font-family: 'Syne', sans-serif;
+}

@@ -1,0 +1,20 @@
+.task-item { background-color: var(--surface-2); border: 1px solid var(--border); border-radius: var(--radius); padding: 20px 24px; display: flex; align-items: flex-start; gap: 16px; transition: transform var(--transition), border-color var(--transition), box-shadow var(--transition); animation: slideIn 0.3s ease both; }
+.task-item:hover { transform: translateY(-2px); border-color: rgba(79,255,176,0.2); box-shadow: var(--shadow); }
+.task-item.done { opacity: 0.5; }
+.task-item.done .task-title { text-decoration: line-through; color: var(--text-muted); }
+.task-check { width: 22px; height: 22px; border-radius: 50%; border: 2px solid var(--border); background: transparent; cursor: pointer; flex-shrink: 0; margin-top: 2px; transition: all var(--transition); display: flex; align-items: center; justify-content: center; font-size: 0.7rem; color: #0b0f1a; }
+.task-check.checked { background: var(--accent); border-color: var(--accent); }
+.task-body { flex: 1; min-width: 0; }
+.task-top { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; margin-bottom: 6px; }
+.task-title { font-family: 'Syne', sans-serif; font-size: 1rem; font-weight: 700; }
+.priority-tag { font-size: 0.68rem; font-weight: 700; padding: 3px 10px; border-radius: 50px; letter-spacing: 0.08em; text-transform: uppercase; font-family: 'Syne', sans-serif; }
+.priority-high   { background: rgba(255,107,107,0.15); color: var(--accent-3); }
+.priority-medium { background: rgba(255,204,85,0.15);  color: var(--accent-4); }
+.priority-low    { background: rgba(79,255,176,0.12);  color: var(--accent); }
+.category-tag { font-size: 0.68rem; font-weight: 600; padding: 3px 10px; border-radius: 50px; background: rgba(91,143,255,0.12); color: var(--accent-2); font-family: 'Syne', sans-serif; }
+.task-desc { font-size: 0.88rem; color: var(--text-muted); margin-bottom: 10px; line-height: 1.5; }
+.task-meta { display: flex; gap: 16px; font-size: 0.78rem; color: var(--text-muted); flex-wrap: wrap; }
+.task-actions { display: flex; flex-direction: column; gap: 6px; flex-shrink: 0; }
+.icon-btn { background: transparent; border: 1px solid var(--border); border-radius: var(--radius-sm); color: var(--text-muted); cursor: pointer; width: 32px; height: 32px; display: flex; align-items: center; justify-content: center; font-size: 0.85rem; transition: all var(--transition); }
+.icon-btn.edit:hover   { border-color: var(--accent-2); color: var(--accent-2); }
+.icon-btn.delete:hover { border-color: var(--accent-3); color: var(--accent-3); }
