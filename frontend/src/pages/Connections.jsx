@@ -6,7 +6,7 @@ import Footer from '../components/Footer'
 import { io } from 'socket.io-client'
 import './Connections.css'
 
-const API = 'http://localhost:5000/api'
+const API = 'https://project-1-ih77.onrender.com/api'
 
 function Connections() {
   const { user, token } = useAuth()
@@ -26,7 +26,7 @@ function Connections() {
     if (!user || !token) return
     loadConnections()
 
-    const socket = io('http://localhost:5000')
+    const socket = io('https://project-1-ih77.onrender.com')
     socketRef.current = socket
     socket.emit('join:user', user.id)
 

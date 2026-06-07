@@ -5,7 +5,7 @@ import Navbar from '../components/Navbar'
 import { io } from 'socket.io-client'
 import './Workspace.css'
 
-const API = 'http://localhost:5000/api'
+const API = 'https://project-1-ih77.onrender.com/api'
 
 function Workspace() {
   const { connectionId } = useParams()
@@ -28,7 +28,7 @@ function Workspace() {
     if (!user || !token) return
     loadAll()
 
-    const socket = io('http://localhost:5000')
+    const socket = io('https://project-1-ih77.onrender.com')
     socketRef.current = socket
     socket.emit('join:user', user.id)
     socket.emit('join:workspace', connectionId)

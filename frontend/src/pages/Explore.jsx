@@ -4,7 +4,7 @@ import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 import './Explore.css'
 
-const API = 'http://localhost:5000/api'
+const API = 'https://project-1-ih77.onrender.com/api'
 
 const ALL_ROLES = [
   'All Roles',

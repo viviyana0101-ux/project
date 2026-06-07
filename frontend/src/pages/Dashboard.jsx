@@ -7,7 +7,7 @@ import TaskList from '../components/TaskList'
 import { io } from 'socket.io-client'
 import './Dashboard.css'
 
-const API = 'http://localhost:5000/api'
+const API = 'https://project-1-ih77.onrender.com/api'
 
 function Dashboard() {
   const { user, token, authHeaders } = useAuth()
@@ -28,7 +28,7 @@ function Dashboard() {
   }, [user])
 
   useEffect(() => {
-    const socket = io('http://localhost:5000')
+    const socket = io('https://project-1-ih77.onrender.com')
     socketRef.current = socket
 
     socket.on('task:created', ({ task }) => {
